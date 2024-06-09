@@ -34,7 +34,7 @@ function show()
 		var special = parseInt(document.getElementById("special").value);
 		var all = (uppercase + lowerCase + numbers + special);
 		
-		if (all > characters) {document.getElementById("info").innerHTML = "<span style=color:red>"+"Hasło nie może mieć wiecej znaków niż podałeś/aś" +"</span>";
+		if (all > characters) {document.getElementById("info").innerHTML = "<span style=color:red>"+"Hasło nie może mieć wiecej znaków niż podałeś/aś"+" " + "(" +  characters + ")" + "</span>";
 		return;}
 		
 		if (characters <= "7") {document.getElementById("info").innerHTML = "<span style=color:gray>"+"Hało musi mieć wiecej niz 7 znaków " +"</span>"; return}
